@@ -78,13 +78,14 @@
             align-items: center;
             box-shadow: 0px 6px 20px rgba(163, 145, 129, 0.15);
             overflow: hidden;
+            padding: 12px; /* Memberikan ruang napas agar logo tidak menyentuh pinggiran */
         }
 
-        /* Memastikan gambar logo terpotong melingkar sempurna */
+        /* Perbaikan utama: Memastikan logo tampil utuh sempurna tanpa terpotong */
         .logo-wrapper img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain; /* Mengunci rasio asli gambar agar tidak melar atau terpotong */
             display: block;
         }
 
@@ -189,7 +190,7 @@
 <body>
 
     <div class="phone-container">
-        <!-- Bagian Atas Logo (Memanggil berkas gambar asli Anda yang tertera di repositori GitHub) -->
+        <!-- Bagian Atas Logo (Otomatis memanggil berkas image_b9622be1.jpg Anda di GitHub) -->
         <div class="profile-section">
             <div class="logo-ring">
                 <div class="logo-wrapper">
@@ -207,7 +208,7 @@
             </p>
 
             <div class="links-wrapper">
-                <!-- Tombol Kontak WhatsApp (Memakai tautan aman dari Barcode resmi Anda) -->
+                <!-- Tombol Kontak WhatsApp (Memakai link kode barcode resmi Anda) -->
                 <a href="https://wa.me" target="_blank" class="btn-link">
                     <div class="btn-content">
                         <span class="btn-icon">💬</span>
@@ -217,7 +218,7 @@
                 </a>
 
                 <!-- Tombol Kontak Instagram -->
-                <a href="https://instagram.com" target="_blank" class="btn-link">
+                <a href="https://www.instagram.com/swasacafe" target="_blank" class="btn-link">
                     <div class="btn-content">
                         <span class="btn-icon">📸</span>
                         <span>Instagram</span>
